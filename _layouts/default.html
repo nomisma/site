@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <title>{{page.title}}</title>
+                {% include /structure/css.html %}
+                {% seo %}
+                
+    </head>
+    <body>        
+       
+       {% include /structure/navigation.html %}
+        <div class="container-fluid content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{ page.title }}</h1>
+                    
+                    {{ content }}
+                </div>
+        </div>
+    </body>
+</html>
