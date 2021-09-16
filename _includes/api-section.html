@@ -1,0 +1,247 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:50%">API</th>
+            <th>XML</th>
+            <th>JSON</th>
+            <th>Turtle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <a href="#avgAxis">avgAxis</a>
+            </td>
+            <td>
+                <a href="/apis/avgAxis?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;">XML</a>
+            </td>
+            <td>
+                <a href="/apis/avgAxis?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;&amp;format=json"
+                    >JSON</a>
+            </td>
+            <td/>
+        </tr>
+        <tr>
+            <td>
+                <a href="#avgDiameter">avgDiameter</a>
+            </td>
+            <td>
+                <a href="/apis/avgDiameter?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;">XML</a>
+            </td>
+            <td>
+                <a href="/apis/avgDiameter?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;&amp;format=json"
+                    >JSON</a>
+            </td>
+            <td/>
+        </tr>
+        <tr>
+            <td>
+                <a href="#avgWeight">avgWeight</a>
+            </td>
+            <td>
+                <a href="/apis/avgWeight?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;">XML</a>
+            </td>
+            <td>
+                <a href="/apis/avgWeight?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;&amp;format=json"
+                    >JSON</a>
+            </td>
+            <td/>
+        </tr>
+        <tr>
+            <td>
+                <a href="#closingDate">closingDate</a>
+            </td>
+            <td>
+                <a
+                    href="/apis/closingDate?identifiers=http://numismatics.org/crro/id/rrc-385.4|http://numismatics.org/crro/id/rrc-409.2|http://numismatics.org/ocre/id/ric.1(2).aug.1A"
+                    >XML</a>
+            </td>
+            <td>
+                <a
+                    href="/apis/closingDate?identifiers=http://numismatics.org/crro/id/rrc-385.4|http://numismatics.org/crro/id/rrc-409.2|http://numismatics.org/ocre/id/ric.1(2).aug.1A&amp;format=json"
+                    >JSON</a>
+            </td>
+            <td/>
+        </tr>
+        <tr>
+            <td>
+                <a href="#getLabel">getLabel</a>
+            </td>
+            <td>
+                <a href="/apis/getLabel?uri=http://nomisma.org/id/ar&amp;lang=fr">XML</a>
+            </td>
+            <td>
+                <a href="/apis/getLabel?uri=http://nomisma.org/id/ar&amp;lang=fr&amp;format=json">JSON</a>
+            </td>
+            <td/>
+        </tr>
+        <tr>
+            <td>
+                <a href="#getFindspots">getFindspots</a>
+            </td>
+            <td/>
+            <td>
+                <a href="/apis/getFindspots?id=denarius">GeoJSON</a>
+            </td>
+            <td/>
+        </tr>
+        <tr>
+            <td>
+                <a href="#getHoards">getHoards</a>
+            </td>
+            <td/>
+            <td>
+                <a href="/apis/getHoards?id=denarius">GeoJSON</a>
+            </td>
+            <td/>
+        </tr>
+        <tr>
+            <td>
+                <a href="#getMints">getMints</a>
+            </td>
+            <td/>
+            <td>
+                <a href="/apis/getMints?id=denarius">GeoJSON</a>
+            </td>
+            <td/>
+        </tr>		
+        <tr>
+            <td>
+                <a href="#getRdf">getRdf</a>
+            </td>
+            <td>
+                <a href="/apis/getRdf?identifiers=rome|augustus|av|aureus">RDF/XML</a>
+            </td>
+            <td>
+                <a href="/apis/getRdf?identifiers=rome|augustus|av|aureus&amp;format=json">JSON-LD</a>
+            </td>
+            <td>
+                <a href="/apis/getRdf?identifiers=rome|augustus|av|aureus&amp;format=ttl">RDF/TTL</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div id="avgAxis">
+    <h3>Average Axis</h3>
+    <p>Get average axis for given SPARQL query.<br/>
+        <b>Webservice Type</b> : REST<br/>
+        <b>Url</b> : nomisma.org/avgAxis?<br/>
+        <b>Parameters</b> : constraints (following predicate - object format. multiple contraints separated by ' AND '. See examples below), format
+        ('json' or 'xml', default 'xml')<br/>
+        <b>Result</b> : returns a decimal number in a response wrapper.<br/>
+        <b>Examples</b>: <a href="/apis/avgAxis?constraints=dcterms:source nm:ric AND nmo:hasMint nm:rome AND nmo:hasDenomination       nm:denarius"
+            >http://nomisma.org/apis/avgAxis?constraints=dcterms:source nm:ric AND nmo:hasMint nm:rome AND nmo:hasDenomination nm:denarius</a>
+        <br/>
+        <a href="/apis/avgAxis?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;"
+            >http://nomisma.org/apis/avgWeight?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;</a>
+    </p>
+</div>
+<div id="avgDiameter">
+    <h3>Average Diameter</h3>
+    <p>Get average diameter for given SPARQL query.<br/>
+        <b>Webservice Type</b> : REST<br/>
+        <b>Url</b> : nomisma.org/avgDiameter?<br/>
+        <b>Parameters</b> : constraints (following predicate - object format. multiple contraints separated by ' AND '. See examples below), format
+        ('json' or 'xml', default 'xml')<br/>
+        <b>Result</b> : returns a decimal number in a response wrapper.<br/>
+        <b>Examples</b>: <a
+            href="/apis/avgDiameter?constraints=dcterms:source nm:ric AND nmo:hasMint nm:rome AND nmo:hasDenomination       nm:denarius"
+            >http://nomisma.org/apis/avgDiameter?constraints=dcterms:source nm:ric AND nmo:hasMint nm:rome AND nmo:hasDenomination nm:denarius</a>
+        <br/>
+        <a href="/apis/avgDiameter?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;"
+            >http://nomisma.org/apis/avgDiameter?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;</a>
+    </p>
+</div>
+<div id="avgWeight">
+    <h3>Average Weight</h3>
+    <p>Get average weight for given SPARQL query.<br/>
+        <b>Webservice Type</b> : REST<br/>
+        <b>Url</b> : nomisma.org/avgWeight?<br/>
+        <b>Parameters</b> : constraints (following predicate - object format. multiple contraints separated by ' AND '. See examples below), format
+        ('json' or 'xml', default 'xml')<br/>
+        <b>Result</b> : returns a decimal number in a response wrapper.<br/>
+        <b>Examples</b>: <a
+            href="/apis/avgWeight?constraints=dcterms:source nm:ric AND nmo:hasMint nm:rome AND nmo:hasDenomination       nm:denarius"
+            >http://nomisma.org/apis/avgWeight?constraints=dcterms:source nm:ric AND nmo:hasMint nm:rome AND nmo:hasDenomination nm:denarius</a>
+        <br/>
+        <a href="/apis/avgWeight?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;"
+            >http://nomisma.org/apis/avgWeight?constraints=nmo:hasTypeSeriesItem &lt;http://numismatics.org/ocre/id/ric.1(2).aug.1A&gt;</a>
+    </p>
+</div>
+<div id="closingDate">
+    <h3>Closing Date</h3>
+    <p>Get the closing date of a hoard based on coin type URIs provided in the request parameter.<br/>
+        <b>Webservice Type</b> : REST<br/>
+        <b>Url</b> : nomisma.org/closingDate?<br/>
+        <b>Parameters</b> : identifiers (coin type URIs divided by a pipe '|'), format ('json' or 'xml', default 'xml')<br/>
+        <b>Result</b> : returns an integer which represents the year. Negative numbers refer to B.C. dates.<br/>
+        <b>Examples</b>: <a
+            href="/apis/closingDate?identifiers=http://numismatics.org/crro/id/rrc-385.4|http://numismatics.org/crro/id/rrc-409.2|http://numismatics.org/ocre/id/ric.1(2).aug.1A"
+            >http://nomisma.org/apis/closingDate?identifiers=http://numismatics.org/crro/id/rrc-385.4|http://numismatics.org/crro/id/rrc-409.2|http://numismatics.org/ocre/id/ric.1(2).aug.1A</a>
+    </p>
+</div>
+<div id="getFindspots">
+    <h3>Get Findspots</h3>
+    <p>Get all individual find spots for a given skos:Concept defined by the id parameter or for a given coin type (nmo:TypeSeriesItem) defined by
+        the coinType parameter<br/>
+        <b>Webservice Type</b> : REST<br/>
+        <b>Url</b> : nomisma.org/getFindspots?<br/>
+        <b>Parameters</b> : id (of Nomisma ID) OR coinType (full URI for a coin type) OR symbol (full URI for a symbol [monogram, mint mark, etc.])<br/>
+        <b>Result</b> : returns geoJSON for features (points or polygons)<br/>
+        <b>Examples</b>: <a href="/apis/getFindspots?id=denarius">apis/getFindspots?id=denarius</a>, <a
+            href="/apis/getFindspots?coinType=http://numismatics.org/crro/id/rrc-408.1a"
+            >apis/getFindspots?coinType=http://numismatics.org/crro/id/rrc-408.1a</a>, <a
+                href="/apis/getFindspots?symbol=http://numismatics.org/ocre/symbol/monogram.ric.10.marcian.1"
+                >apis/getFindspots?symbol=http://numismatics.org/ocre/symbol/monogram.ric.10.marcian.1</a>
+    </p>
+</div>
+<div id="getHoards">
+    <h3>Get Hoards</h3>
+    <p>Get all hoards associated with a given skos:Concept defined by the id parameter or for a given coin type (nmo:TypeSeriesItem) defined by the
+        coinType parameter. If the skos:Concept is a hoard, then only one point is returned.<br/>
+        <b>Webservice Type</b> : REST<br/>
+        <b>Url</b> : nomisma.org/getHoards?<br/>
+        <b>Parameters</b> : id (of Nomisma ID) OR coinType (full URI for a coin type) OR symbol (full URI for a symbol [monogram, mint mark, etc.])<br/>
+        <b>Result</b> : returns geoJSON for features (points or polygons)<br/>
+        <b>Examples</b>: <a href="/apis/getHoards?id=denarius">apis/getHoards?id=denarius</a>, <a
+            href="/apis/getHoards?coinType=http://numismatics.org/crro/id/rrc-408.1a"
+            >apis/getHoards?coinType=http://numismatics.org/crro/id/rrc-408.1a</a>, <a
+                href="/apis/getHoards?symbol=http://numismatics.org/ocre/symbol/monogram.ric.10.marcian.1"
+                >apis/getHoards?symbol=http://numismatics.org/ocre/symbol/monogram.ric.10.marcian.1</a>
+    </p>
+</div>
+<div id="getMints">
+    <h3>Get Mints</h3>
+    <p>Get all minting locations (may be nmo:Mint or nmo:Region) associated with a given skos:Concept defined by the id parameter. If the
+        skos:Concept is a mint or region, then only one point or polygon is returned.<br/>
+        <b>Webservice Type</b> : REST<br/>
+        <b>Url</b> : nomisma.org/getMints?<br/>
+        <b>Parameters</b> : id (of Nomisma ID) OR symbol (full URI for a symbol [monogram, mint mark, etc.])<br/>
+        <b>Result</b> : returns geoJSON for features (points or polygons)<br/>
+        <b>Examples</b>: <a href="/apis/getMints?id=denarius">apis/getMints?id=denarius</a>, <a
+            href="/apis/getMints?symbol=http://numismatics.org/ocre/symbol/monogram.ric.10.marcian.1"
+            >apis/getMints?symbol=http://numismatics.org/ocre/symbol/monogram.ric.10.marcian.1</a>
+    </p>
+</div>
+<div id="getLabel">
+    <h3>Get Label</h3>
+    <p>Get the label of a Nomisma ID given its URI and language code.<br/>
+        <b>Webservice Type</b> : REST<br/>
+        <b>Url</b> : nomisma.org/getLabel?<br/>
+        <b>Parameters</b> : uri (of Nomisma ID), lang (two-letter ISO language code), format ('json' or 'xml', default 'xml')<br/>
+        <b>Result</b> : returns the label in given language, or English as default.<br/>
+        <b>Examples</b>: <a href="/apis/getLabel?uri=http://nomisma.org/id/ar&amp;lang=fr">apis/getLabel?uri=http://nomisma.org/id/ar&amp;lang=fr</a>
+    </p>
+</div>
+<div id="getRDF">
+    <h3>Get RDF</h3>
+    <p>Aggregate RDF for Nomisma ids. The default stream is in RDF/XML, but Turtle and JSON-LD are available.<br/>
+        <b>Webservice Type</b> : REST<br/>
+        <b>Url</b> : nomisma.org/getRdf?<br/>
+        <b>Parameters</b> : identifiers (Nomisma ids divided by a pipe '|'), format ('xml', 'ttl', 'json'; default 'xml')<br/>
+        <b>Result</b> : RDF/XML, RDF/TTL. Other RDF formats will be supported eventually.<br/>
+        <b>Examples</b>: <a href="/apis/getRdf?identifiers=rome|augustus|av|aureus">apis/getRdf?identifiers=rome|augustus|av|aureus</a>
+    </p>
+</div>
+<hr>
