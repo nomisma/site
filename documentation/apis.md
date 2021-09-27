@@ -1,6 +1,7 @@
 ---
 title: Nomisma.org APIs
 layout: default
+permalink: /documentation/apis/
 ---
 
 # API Documentation
