@@ -4,6 +4,7 @@
 
 title: Nomisma.org Data
 layout: default
+permalink:/data
 ---
 
 # Get Data
