@@ -7,23 +7,23 @@
                 <span class="icon-bar"/>
                 <span class="icon-bar"/>
             </button>
-            <a class="navbar-brand logo-nav" href="/">
-                <img style="display:inline" src="/images/nomisma-nav.png" alt="nomisma.org"/>
+            <a class="navbar-brand logo-nav" href="{{ site.baseurl }}">
+                <img style="display:inline" src="{{ site.baseurl }}/images/nomisma-nav.png" alt="nomisma.org"/>
             </a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="/browse">Browse IDs</a>
+                    <a href="{{ site.baseurl }}/browse">Browse IDs</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research Tools <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="/research/distribution">Typological Distribution</a>
+                            <a href="{{ site.baseurl }}/research/distribution">Typological Distribution</a>
                         </li>
                         <li>
-                            <a href="/research/metrical">Measurement Analysis</a>
+                            <a href="{{ site.baseurl }}/research/metrical">Measurement Analysis</a>
                         </li>
                     </ul>
                 </li>                
@@ -31,13 +31,13 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="/ontology">Ontology</a>
+                            <a href="{{ site.baseurl }}/ontology">Ontology</a>
                         </li>
                         <li>
-                            <a href="/nuds">Numismatic Description Schema (NUDS)</a>
+                            <a href="{{ site.baseurl }}/nuds">Numismatic Description Schema (NUDS)</a>
                         </li>
                         <li>
-                            <a href="/documentation/apis">APIs</a>
+                            <a href="{{ site.baseurl }}/documentation/apis">APIs</a>
                         </li>                        
                     </ul>
                 </li>						
@@ -47,17 +47,17 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Data <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="/data">Overview</a>
+                            <a href="{{ site.baseurl }}/data">Overview</a>
                         </li>
                         <li>
-                            <a href="/sparql">SPARQL</a>
+                            <a href="{{ site.baseurl }}/sparql">SPARQL</a>
                         </li>                       
                     </ul>
                     
                 </li>
             </ul>
             <div class="col-sm-3 col-md-3 pull-right">
-                <form class="navbar-form" role="search" action="/browse" method="get">
+                <form class="navbar-form" role="search" action="{{ site.baseurl }}/browse" method="get">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search IDs" name="q" id="srch-term"></input>
                         <div class="input-group-btn">

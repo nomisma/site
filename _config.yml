@@ -22,7 +22,7 @@ title: Nomisma.org
 email: egruber@numismatics.org
 description: >- # this means to ignore newlines until "baseurl:"
   Nomisma.org is a collaborative project to provide stable digital representations of numismatic concepts according to the principles of Linked Open Data.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/nomisma" # the subpath of your site, e.g. /blog
 url: "http://nomisma.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ewg118
 github_username:  ewg118
