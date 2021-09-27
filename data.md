@@ -9,14 +9,14 @@ permalink: /data/
 
 # Get Data
 
-Data for Nomisma.org concepts are made open with a [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/) (CC-BY). These data can be reused for any purpose, both commercial and non-commercial. Third party contributions to the Nomisma.org Linked Open Data ecosystem (types, hoards, coins, etc.) come with separate rights or license statements. See the [datasets](/datasets) page for further details and links to download RDF for partner data.
+Data for Nomisma.org concepts are made open with a [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/) (CC-BY). These data can be reused for any purpose, both commercial and non-commercial. Third party contributions to the Nomisma.org Linked Open Data ecosystem (types, hoards, coins, etc.) come with separate rights or license statements. See the [datasets]({{site.baseurl}}/datasets) page for further details and links to download RDF for partner data.
 
 ## Bulk Downloads
-The Nomisma concepts are regenerated nightly and available as a bulk download in [RDF/XML](/nomisma.org.rdf), [JSON-LD](/nomisma.org.jsonld), and [RDF Turtle](/nomisma.org.ttl) syntax.
+The Nomisma concepts are regenerated nightly and available as a bulk download in [RDF/XML]({{site.baseurl}}/nomisma.org.rdf), [JSON-LD]({{site.baseurl}}/nomisma.org.jsonld), and [RDF Turtle]({{site.baseurl}}/nomisma.org.ttl) syntax.
 
 These concepts are committed to a [Github repository](https://github.com/nomisma/data) nightly, and versions can be tracked back to 2012.
 
-[Partner datasets](/datasets) are available for download, primarily as RDF/XML. Please refer to each institution's rights and/or license statements regarding reuse.
+[Partner datasets]({{site.baseurl}}/datasets) are available for download, primarily as RDF/XML. Please refer to each institution's rights and/or license statements regarding reuse.
 
 ## Accessing Data Through Web Services
 It is possible to access Nomisma linked data through a variety of web services, either about individual concepts or any class of object integrated into Nomisma's SPARQL endpoint.
