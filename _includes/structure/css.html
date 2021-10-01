@@ -2,4 +2,13 @@
 <!-- bootstrap -->
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
 <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+{% if page.id == "sparql" %}
+<script type="text/javascript" src="{{ site.baseurl }}/javascript/codemirror.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/javascript/matchbrackets.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/javascript/sparql.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/javascript/sparql_functions.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/css/codemirror.css"></link>
+{% endif %}
+
 <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css"></link>
