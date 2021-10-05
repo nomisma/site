@@ -15,122 +15,132 @@
        
         <div class="container-fluid content">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <h1>{{ page.title }}</h1>
                     
                     {{ content }}
-                </div>
+                </div>              
+                
+            </div>
+            <div class="row">
                 <div class="col-md-4">
-                    <div>
-                        <h3>Data Export</h3>
-                        <div>
-                            <h4>Nomisma Linked Data</h4>
-                            <table class="table-dl">
-                                <tr>
-                                    <td>
-                                        <img src="{{ site.baseurl }}/images/nomisma.png"/>
-                                    </td>
-                                    <td>
-                                        <strong>Linked Data: </strong>
-                                        <a href="nomisma.org.jsonld">JSON-LD</a>, <a href="nomisma.org.ttl">TTL</a>, <a href="nomisma.org.rdf">RDF/XML</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div>
-                            <h4>Pelagios Annotations</h4>
-                            <table class="table-dl">
-                                <tr>
-                                    <td>
-                                        <a href="http://commons.pelagios.org/">
-                                            <img src="{{ site.baseurl }}/images/pelagios.png"/>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <strong>VoID for Concepts: </strong>
-                                        <a href="pelagios.void.rdf">RDF/XML</a>
-                                        <br/>
-                                        <strong>VoID for Partner Objects: </strong>
-                                        <a href="pelagios-objects.void.rdf">RDF/XML</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Atom Feed</h3>
-                        <table class="table-dl">
-                            <tr>
-                                <td>
-                                    <a href="{{ site.baseurl }}/feed/">
-                                        <img src="{{ site.baseurl }}/images/atom-large.png"/>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="{{ site.baseurl }}/feed/">Feed</a>
-                                    <br/>
-                                    <a href="http://numishare.blogspot.com/2013/07/updates-to-nomisma-atom-feed.html">Documentation</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div>
-                        <h3>Contributors</h3>
-                        <p>The following institutions have contributed data, specialist advice and/or financial support to the Nomisma project:</p>
-                        
-                        <div class="media">
-                            <a href="http://numismatics.org" title="http://numismatics.org">
-                            <img src="{{ site.baseurl }}/images/ans_large.png" alt="http://numismatics.org"></img>
-                            </a>
-                        </div>
-                        <div class="media">
-                            <a href="http://www.paris-sorbonne.fr/" title="http://www.paris-sorbonne.fr/">
-                            <img src="{{ site.baseurl }}/images/paris-small.jpg" alt="http://www.paris-sorbonne.fr/"></img>
-                            </a>
-                        </div>
-                        <div class="media">
-                            <a href="http://finds.org.uk/" title="http://finds.org.uk/">
-                            <img src="http://finds.org.uk/images/logos/pas.gif" alt="http://finds.org.uk/"></img>
-                            </a>
-                        </div>
-                        <div class="media">
-                            <a href="http://www.britishmuseum.org/" title="http://www.britishmuseum.org/">
-                            <img src="http://finds.org.uk/images/logos/bm_logo.png" alt="http://www.britishmuseum.org/"></img>
-                            </a>
-                        </div>
-                        <div class="media">
-                            <a href="http://www.dainst.org/" title="http://www.dainst.org/">
-                                <img src="{{ site.baseurl }}/images/GreifBlau.jpg" alt="http://www.dainst.org/"></img>
-                            </a>
-                        </div>
-                        <div class="media">
-                            <a href="http://www.ahrc.ac.uk/" title="http://www.ahrc.ac.uk/">
-                            <img src="http://archaeologydataservice.ac.uk/images/logos/org34.png" alt="http://www.ahrc.ac.uk/"></img>
-                            </a>
-                        </div>
-                        <div class="media">
-                            <a href="http://www.smb.museum/ikmk/" title="http://www.smb.museum/ikmk/">
-                                <img src="{{ site.baseurl }}/images/SMB_MK_Black_sRGB.jpg" alt="http://www.smb.museum/ikmk/"></img>
-                            </a>
-                        </div>
-                        <div class="media">
-                            <a href="http://www2.uni-frankfurt.de/" title="http://www2.uni-frankfurt.de/">
-                                <img src="{{ site.baseurl }}/images/goethe.png" alt="http://www2.uni-frankfurt.de/"></img>
-                            </a>
-                        </div>
-                        <div class="media">
-                            <a href="https://www.humboldt-foundation.de/" title="https://www.humboldt-foundation.de/">
-                                <img src="{{ site.baseurl }}/images/AvH_Logo_n7_Word_rgb2.jpg" alt="https://www.humboldt-foundation.de/"></img>
-                            </a>
-                        </div>
-                        <div class="media">
-                            <a href="https://www.neh.gov/" title="The National Endowment for the Humanities">
-                                <img src="{{ site.baseurl }}/images/neh_logo_horizontal_rgb.jpg" alt="NEH Logo"></img>
-                            </a>
-                        </div>
+                    <div class="card">
+                        test
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>The following institutions have contributed data, specialist advice and/or financial support to the Nomisma project:</p>
+                    
+                    <span class="media">
+                        <a href="http://numismatics.org" title="http://numismatics.org">
+                            <img src="{{ site.baseurl }}/images/ans_large.png" alt="http://numismatics.org"></img>
+                        </a>
+                    </span>
+                    <span class="media">
+                        <a href="http://www.paris-sorbonne.fr/" title="http://www.paris-sorbonne.fr/">
+                            <img src="{{ site.baseurl }}/images/paris-small.jpg" alt="http://www.paris-sorbonne.fr/"></img>
+                        </a>
+                    </span>
+                    <span class="media">
+                        <a href="http://finds.org.uk/" title="http://finds.org.uk/">
+                            <img src="http://finds.org.uk/images/logos/pas.gif" alt="http://finds.org.uk/"></img>
+                        </a>
+                    </span>
+                    <span class="media">
+                        <a href="http://www.britishmuseum.org/" title="http://www.britishmuseum.org/">
+                            <img src="http://finds.org.uk/images/logos/bm_logo.png" alt="http://www.britishmuseum.org/"></img>
+                        </a>
+                    </span>
+                    <span class="media">
+                        <a href="http://www.dainst.org/" title="http://www.dainst.org/">
+                            <img src="{{ site.baseurl }}/images/GreifBlau.jpg" alt="http://www.dainst.org/"></img>
+                        </a>
+                    </span>     
+                    <br/>
+                    <span class="media">
+                        <a href="http://www.ahrc.ac.uk/" title="http://www.ahrc.ac.uk/">
+                            <img src="http://archaeologydataservice.ac.uk/images/logos/org34.png" alt="http://www.ahrc.ac.uk/"></img>
+                        </a>
+                    </span>
+                    <span class="media">
+                        <a href="http://www.smb.museum/ikmk/" title="http://www.smb.museum/ikmk/">
+                            <img src="{{ site.baseurl }}/images/SMB_MK_Black_sRGB.jpg" alt="http://www.smb.museum/ikmk/"></img>
+                        </a>
+                    </span>
+                    <span class="media">
+                        <a href="http://www2.uni-frankfurt.de/" title="http://www2.uni-frankfurt.de/">
+                            <img src="{{ site.baseurl }}/images/goethe.png" alt="http://www2.uni-frankfurt.de/"></img>
+                        </a>
+                    </span>
+                    <span class="media">
+                        <a href="https://www.humboldt-foundation.de/" title="https://www.humboldt-foundation.de/">
+                            <img src="{{ site.baseurl }}/images/AvH_Logo_n7_Word_rgb2.jpg" alt="https://www.humboldt-foundation.de/"></img>
+                        </a>
+                    </span>
+                    <span class="media">
+                        <a href="https://www.neh.gov/" title="The National Endowment for the Humanities">
+                            <img src="{{ site.baseurl }}/images/neh_logo_horizontal_rgb.jpg" alt="NEH Logo"></img>
+                        </a>
+                    </span>
+                </div>
+            </div>            
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Nomisma Linked Data</h4>
+                    <table class="table-dl">
+                        <tr>
+                            <td>
+                                <img src="{{ site.baseurl }}/images/nomisma.png"/>
+                            </td>
+                            <td>
+                                <strong>Linked Data: </strong>
+                                <a href="nomisma.org.jsonld">JSON-LD</a>, <a href="nomisma.org.ttl">TTL</a>, <a href="nomisma.org.rdf">RDF/XML</a>
+                            </td>
+                        </tr>
+                    </table>                    
+                </div>
+                <div class="col-md-4">
+                    <h4>Pelagios Annotations</h4>
+                    <table class="table-dl">
+                        <tr>
+                            <td>
+                                <a href="http://commons.pelagios.org/">
+                                    <img src="{{ site.baseurl }}/images/pelagios.png"/>
+                                </a>
+                            </td>
+                            <td>
+                                <strong>VoID for Concepts: </strong>
+                                <a href="pelagios.void.rdf">RDF/XML</a>
+                                <br/>
+                                <strong>VoID for Partner Objects: </strong>
+                                <a href="pelagios-objects.void.rdf">RDF/XML</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <h4>Atom Feed</h4>
+                    <table class="table-dl">
+                        <tr>
+                            <td>
+                                <a href="{{ site.baseurl }}/feed/">
+                                    <img src="{{ site.baseurl }}/images/atom-large.png"/>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{{ site.baseurl }}/feed/">Feed</a>
+                                <br/>
+                                <a href="http://numishare.blogspot.com/2013/07/updates-to-nomisma-atom-feed.html">Documentation</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
+        
+        {% include /structure/footer.html %}
+        
     </body>
 </html>
