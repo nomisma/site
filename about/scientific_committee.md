@@ -28,7 +28,7 @@ The Nomisma.org scientific committee consists of experts in the fields of numism
                     <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" />{{person.orcid_uri}}</a></p>
                 {% endif %}
                 
-                <p>{{ person.bio }}</p>
+                <div class="truncate">{{ person.bio }}</div>
             </div>        
         </div>   
     {% endfor %}
