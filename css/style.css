@@ -5,13 +5,14 @@
  */
 body{
     font-size: 16px;
-    background-color: #F8F8F8;
+    background-color: #6e87cd;
 }
 .nav{
     margin-top: 10px;
 }
 .navbar{
     margin-bottom: 0;
+    border-bottom: 4px solid #254aa5;
 }
 /*
   .navbar-brand {
@@ -55,13 +56,24 @@ body{
     -webkit-box-orient: vertical;
     white-space: normal;
 }
+a {
+    color: #6e87cd;
+}
+a:hover {
+    color: #254aa5
+}
+
+.nomisma-banner {
+    width: 100%;
+    border-bottom: 4px solid #254aa5;
+}
 /*
   ***************************************
   INDEX
   ***************************************
  */
 .media img{
-    height: 50px;
+    height: 48px;
     margin: 5px;
 }
 
@@ -100,8 +112,13 @@ body{
  */
 #footer{
     padding: 10px 0;
-    border-top: 1px solid #e7e7e7;
+    border-top: 4px solid #254aa5;
     text-align: center;
+    color:white;
+}
+#footer a {
+    color:white;
+    text-decoration: underline;
 }
 /*
   ***************************************

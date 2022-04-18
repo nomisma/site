@@ -4,11 +4,22 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{page.title}}</title> {% include /structure/css.html %} {% seo %} </head>
-    <body> {% include /structure/navigation.html %} <div class="container-fluid content">
+        <title>{{page.title}}</title> 
+        {% include /structure/css.html %} {% seo %} 
+    </head>
+    <body> 
+        {% include /structure/navigation.html %} 
+        <div class="container-fluid content">
+            <div class="row">
+              <div class="col-md-12">
+                  <img src="{{site.baseurl}}/images/nomisma_banner.jpg" alt="Nomisma Banner" class="nomisma-banner"/>
+              </div>
+            </div>            
             <div class="row section">
                 <div class="col-md-12">
-                    <h1>{{ page.title }}</h1> {{ content }} </div>
+                    <h1>{{ page.title }}</h1>
+                    {{ content }} 
+                </div>
             </div>
             <div class="row section">
                 <div class="col-md-4">
@@ -95,8 +106,8 @@
                     <h4>Nomisma Linked Data</h4>
                     <table class="table-dl">
                         <tr>
-                            <td>
-                                <img src="{{ site.baseurl }}/images/nomisma.png" />
+                            <td class="media">
+                                <img src="{{ site.baseurl }}/images/nomisma-round.svg" />
                             </td>
                             <td>
                                 <strong>Linked Data: </strong>
@@ -109,7 +120,7 @@
                     <h4>Pelagios Annotations</h4>
                     <table class="table-dl">
                         <tr>
-                            <td>
+                            <td class="media">
                                 <a href="http://commons.pelagios.org/">
                                     <img src="{{ site.baseurl }}/images/pelagios.png" />
                                 </a>
@@ -128,7 +139,7 @@
                     <h4>Atom Feed</h4>
                     <table class="table-dl">
                         <tr>
-                            <td>
+                            <td class="media">
                                 <a href="{{ site.baseurl }}/feed/">
                                     <img src="{{ site.baseurl }}/images/atom-large.png" />
                                 </a>
