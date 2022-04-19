@@ -8,7 +8,8 @@ permalink: /about/scientific_committee/
 The Nomisma.org scientific committee consists of experts in the fields of numismatics, computer science, and Semantic Web principles.
 
 <div class="row">    
-    {% for person in site.data.committee %}
+    {% for person in site.scientific_committee %}
+    {% assign sorted = site.scientific_committee | sort:"id" %}
         <div class="col-md-4">
             <div class="card">
                 {% if person.editor_uri %}
@@ -23,12 +24,12 @@ The Nomisma.org scientific committee consists of experts in the fields of numism
                     <h4>{{ person.org }}</h4>
                 {% endif %}
                 
-                {% if person.orcid_uri %}
-                <p><a href="{{person.orcid_uri}}">
-                    <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" />{{person.orcid_uri}}</a></p>
+                {% if person.orcid %}
+                <p><a href="{{person.orcid}}">
+                    <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" />{{person.orcid}}</a></p>
                 {% endif %}
                 
-                <div class="truncate">{{ person.bio }}</div>
+                <div class="truncate">{{ person.content }}</div>
             </div>        
         </div>   
     {% endfor %}

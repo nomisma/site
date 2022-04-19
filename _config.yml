@@ -11,6 +11,11 @@ github_username:  ewg118
 theme: minima
 plugins:
   - jekyll-feed
+  
+collections:
+    scientific_committee:
+        output: true
+        sort_by: id
 
 # Exclude from processing.
 # The following items will not be processed, by default.
