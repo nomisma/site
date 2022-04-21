@@ -1,3 +1,5 @@
-name,org,org_url,role
-Andrew Meadows,"New College, Oxford University",http://www.new.ox.ac.uk/,
-Frédérique Duyrat,Bibliothèque nationale de France,http://www.bnf.fr/,
+name,org,org_url,role,email
+Andrew Meadows,"New College, Oxford University",http://www.new.ox.ac.uk/,chair,andrew.meadows@new.ox.ac.uk 
+Frédérique Duyrat,Bibliothèque nationale de France,http://www.bnf.fr/,chair,frederique.duyrat@bnf.fr 
+Ulrike Peter,Berlin-Brandenburg Academy of Sciences and Humanities,https://www.bbaw.de/en/,,
+Peter van Alfen,American Numismatic Society,https://numismatics.org/,,
