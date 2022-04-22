@@ -79,6 +79,22 @@ a:hover {
 
 /*
   ***************************************
+  FOOTER
+  ***************************************
+ */
+#footer{
+    padding: 10px 0;
+    border-top: 4px solid #254aa5;
+    text-align: center;
+    color:white;
+}
+#footer a {
+    color:white;
+    text-decoration: underline;
+}
+
+/*
+  ***************************************
   ONTOLOGY PAGE
   ***************************************
  */
@@ -105,21 +121,7 @@ a:hover {
 .description dl dd{
     margin-left: 1em;
 }
-/*
-  ***************************************
-  FOOTER
-  ***************************************
- */
-#footer{
-    padding: 10px 0;
-    border-top: 4px solid #254aa5;
-    text-align: center;
-    color:white;
-}
-#footer a {
-    color:white;
-    text-decoration: underline;
-}
+
 /*
   ***************************************
   PAGINATION/SEARCH RESULTS

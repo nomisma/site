@@ -16,6 +16,9 @@ collections:
     scientific_committee:
         output: true
         sort_by: id
+    sparql_examples:
+        output: true
+        sort_by: order
 
 # Exclude from processing.
 # The following items will not be processed, by default.

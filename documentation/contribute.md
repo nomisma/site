@@ -2,7 +2,7 @@
 title: Nomisma.org APIs
 layout: default
 permalink: /documentation/contribute/
-id: contribute
+id: doc-contribute
 ---
 
 # How to Contribute Data
@@ -14,8 +14,7 @@ The first basic prerequisite for participation is that each object you wish to c
 ## VoID RDF
 This snippet of RDF is intended to describe the contents of a dataset with general metadata described with Dublin Core Terms: title, description, rights, license, and a URI that allows the Nomisma.org back-end fetch the RDF dump from a web server.
 
-<pre><code class="language-markup">
-&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+<pre><code class="language-markup">&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 	xmlns:dcterms="http://purl.org/dc/terms/"
 	xmlns:void="http://rdfs.org/ns/void#"&gt;
 	&lt;void:Dataset rdf:about="http://coins.lib.virginia.edu/"&gt;
@@ -36,8 +35,7 @@ The void:Dataset should include the URI for your project, and this URI should be
 The data dump model should conform to the standards established by Nomisma.org, including the use of the Nomisma ontology where applicable. Nomisma can harvest and make accessible for query different types of numismatic data: collections of physical objects, coin types, hoards, dies, monograms, etc. Each of these types of materials are represented by minor variations of the Nomisma ontology.
 
 ### Physical Coins
-<pre><code class="language-markup">
-&lt;rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+<pre><code class="language-markup">&lt;rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
 	xmlns:void="http://rdfs.org/ns/void#"
 	xmlns:nmo="http://nomisma.org/ontology#"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -102,8 +100,9 @@ The findspot model is based upon the ARIADNE archaeological specification, using
 
 When the findspot conforms to one of the aforementioned URI schemes, the crm:E53_Place and its spatial extent do not have to be explicitly included in the RDF export, since these will be programmatically extracted from Wikidata.org to improve consistency across harvested datasets. The crm:E53_Place that defines the gazetteer URI includes two properties (in the WGS84 geo ontology and CIDOC-CRM) pointing to the same node for the spatial expression, which bears two RDF classes. This model is dually compatible with CIDOC-CRM and the more common WGS84 geo ontology.
 
-<pre><code class="language-markup">
-&lt;nmo:NumismaticObject rdf:about="https://finds.org.uk/database/artefacts/record/id/1018642"&gt;
+This data model, which began implementation in Nomisma-associated projects in April 2020, is explained more thoroughly in a Numishare [blog post](https://numishare.blogspot.com/2020/04/updates-to-coin-hoards-of-roman-republic.html).
+
+<pre><code class="language-markup">&lt;nmo:NumismaticObject rdf:about="https://finds.org.uk/database/artefacts/record/id/1018642"&gt;
         &lt;nmo:hasFindspot&gt;
             &lt;nmo:Find&gt;
                 &lt;crm:P7_took_place_at&gt;
@@ -146,8 +145,7 @@ A coin was found (nmo:hasFindspot, repurposing an existing property to stand in 
 
 ### Hoards
 
-<pre><code class="language-markup">
-&lt;rdf:RDF xmlns:nmo="http://nomisma.org/ontology#" 
+<pre><code class="language-markup">&lt;rdf:RDF xmlns:nmo="http://nomisma.org/ontology#" 
          xmlns:dcterms="http://purl.org/dc/terms/"
          xmlns:void="http://rdfs.org/ns/void#"
          xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"

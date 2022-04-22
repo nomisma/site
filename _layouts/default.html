@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
                 <title>{{page.title}}</title>
                 {% include /structure/css.html %}
-                {% if page.id == 'contribute' %}
+                {% if page.id == 'doc-contribute' or page.id == 'doc-sparql' %}
                 <link type="text/css" rel="stylesheet" href="{{site.baseurl}}/css/prism.css"></link>
                 <script type="text/javascript" src="{{site.baseurl}}/javascript/prism.js"></script>
                 {% endif %}
