@@ -8,7 +8,7 @@ permalink: /documentation/sparql/augustus-1a-findspots/
 
 ### {{page.title}} {#{{page.stub}}}
 
-This will query all coins with individual finds and all coins linked to hoards or hoards with contents containing Augustus 1A. This query makes use of the current Nomisma findspot data model (implemented April 2020). See [documentation]({{site.baseurl}}/documentation/contribute#findspot) for further details
+This will query all coins with individual finds and all coins linked to hoards or hoards with contents containing Augustus 1A. This query makes use of the current Nomisma findspot data model (implemented April 2020). See [documentation]({{site.baseurl}}/documentation/contribute#findspot) for further details. The query also searches for any subtype of Augustus 1A with the UNION query implementing the `skos:broader+` property path, `?broader skos:broader+ <http://numismatics.org/ocre/id/ric.1(2).aug.1A>`. In this case, there are no subtypes in *Roman Imperial Coinage* for Augustus 1A, but this query may be applied to other sections of RIC that do implement a subtype structure or in other hierarchically-organized type corpora, such as [Seleucid Coins Online](http://numismatics.org/sco/).
 
 <pre><code class="language-sparql">
 PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
