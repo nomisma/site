@@ -19,6 +19,12 @@ There are some introductory materials to Nomisma.org's online ontology, model, a
 
 The SPARQL query examples cited above are listed on the Numishare blog [here](https://numishare.blogspot.com/2015/05/sparql-examples-for-dcmiasis-webinar.html), stored on Gist. A wide variety of other SPARQL queries have been uploaded to Ethan Gruber's [Gist account](https://gist.github.com/ewg118/). You can also find templates for created Nomisma RDF exports from normalized data in OpenRefine.
 
+More recently, the Nomisma.org information system and example SPARQL queries were presented in the American Numismatic Society's May 9, 2022 Long Table Series, *Long Table 91. Data Wrangling: How to use Nomisma*, recorded and available below:
+
+<div class="text-center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0_2FrxfM3d0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 A limitless number of queries can be submitted simply to interrogate Nomisma.org concepts and their relations to each other, independent of links to related coin types, hoards, or specimens aggregated by Nomisma.org. Since the minimum threshold for integrating coins from museum or archaeological collections into Nomisma.org is a link to a coin type and/or hoard URI, it is possible to make a wide variety of statistical queries about coins by means of their relationships to types, and the relationships between those types and Nomisma.org numismatic concepts and URIs that represent the concepts of symbols and monograms.
 
 ## Table of Contents

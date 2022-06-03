@@ -4,44 +4,42 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{page.title}}</title> 
-        {% include /structure/css.html %} {% seo %} 
-    </head>
-    <body> 
-        {% include /structure/navigation.html %} 
-        <div class="container-fluid content">
+        <title>{{page.title}}</title> {% include /structure/css.html %} {% seo %} </head>
+    <body> {% include /structure/navigation.html %} <div class="container-fluid content">
             <div class="row">
-              <div class="col-md-12">
-                  <img src="{{site.baseurl}}/images/nomisma_banner.jpg" alt="Nomisma Banner" class="nomisma-banner"/>
-              </div>
-            </div>            
+                <div class="col-md-12">
+                    <img src="{{site.baseurl}}/images/nomisma_banner.jpg" alt="Nomisma Banner" class="nomisma-banner" />
+                </div>
+            </div>
             <div class="row section">
                 <div class="col-md-12">
-                    <h1>{{ page.title }}</h1>
-                    {{ content }} 
-                </div>
+                    <h1>{{ page.title }}</h1> {{ content }} </div>
             </div>
             <div class="row section">
                 <div class="col-md-4">
                     <div class="card">
                         <h3>Get Involved</h3>
-                        <div class="truncate">We are interested in <a
-                                href="{{site.baseurl}}/documentation/contribute">contributions</a> of open numismatic data. If you are a scholar
-                            willing to contribute expertise to expand the scope of Nomisma's coverage of concepts, please contact a relevant <a href="{{site.baseurl}}/about/working_groups">Working Group</a> or
-                            the <a href="{{site.baseurl}}/about/scientific_committee">Scientific Committee</a> to establish a new one.</div>
+                        <div class="truncate">We are interested in <a href="{{site.baseurl}}/documentation/contribute">contributions</a> of open numismatic
+                            data. If you are a scholar willing to contribute expertise to expand the scope of Nomisma's coverage of concepts, please contact a
+                            relevant <a href="{{site.baseurl}}/about/working_groups">Working Group</a> or the <a
+                                href="{{site.baseurl}}/about/scientific_committee">Scientific Committee</a> to establish a new one.</div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <h3>Get Data</h3>
-                        <div class="truncate">Nomisma.org concept and contributing partner <a href="{{site.baseurl}}/data">Linked Open Data</a> are available as bulk downloads. A
-                            <a href="{{site.baseurl}}/sparql">SPARQL endpoint</a> integrates these data and enables querying to answer complex research questions.</div>
+                        <div class="truncate">Nomisma.org concept and contributing partner <a href="{{site.baseurl}}/data">Linked Open Data</a> are available as
+                            bulk downloads. A <a href="{{site.baseurl}}/sparql">SPARQL endpoint</a> integrates these data and enables querying to answer complex
+                            research questions.</div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <h3>Another Heading</h3>
-                        <div class="truncate">What to place here?</div>
+                        <h3>Conduct Research</h3>
+                        <div class="truncate">Nomisma.org has built-in typological <a href="{{site.baseurl}}/research/distribution">distribution</a> and <a
+                                href="{{site.baseurl}}/research/metrical">metrical</a> analysis features, but most resesearch tools available in thematic
+                            projects listed in the <a href="{{site.baseurl}}/about">About</a> page. We plan to expand these graphical tools in Nomisma
+                            eventually, but the <a href="{{site.baseurl}}/documentation/sparql">SPARQL examples</a> provide a tutorial for asking complex research questions.</div>
                     </div>
                 </div>
             </div>
