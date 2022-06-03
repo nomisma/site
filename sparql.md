@@ -12,7 +12,7 @@ permalink: /sparql/
 
 For examples, see [SPARQL Examples](http://nomisma.org/documentation/sparql). A basic tutorial on SPARQL is available from [Apache Jena](https://jena.apache.org/tutorials/sparql.html).
 
-<form role="form" id="sparqlForm" action="{{site.url}}/query" method="GET" accept-charset="UTF-8">
+<form role="form" id="sparqlForm" action="/query" method="GET" accept-charset="UTF-8">
 	<textarea name="query" rows="20" class="form-control" id="code">{% for namespace in site.data.namespaces %}{% if namespace.default == "true" %}
 PREFIX {{ namespace.prefix}}:  <{{namespace.uri}}>{% endif %}{% endfor %}
 
