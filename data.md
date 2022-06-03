@@ -70,10 +70,17 @@ Nomisma supports delivery of individual concepts in a variety of models and seri
 			</td>
 		</tr>
 		<tr>
-			<td>JSON-LD</td>
+			<td>JSON-LD (Nomisma profile)</td>
 			<td>http://nomisma.org/id/{$id}.jsonld</td>
 			<td>
 				<code>application/ld+json</code>
+			</td>
+		</tr>
+		<tr>
+			<td>JSON-LD (Linked Art profile)</td>
+			<td/>
+			<td>
+				<code>application/ld+json;profile=\"https://linked.art/ns/v1/linked-art.json\"</code>
 			</td>
 		</tr>
 	</tbody>
