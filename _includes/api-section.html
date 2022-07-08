@@ -119,6 +119,16 @@
                 <a href="{{site.baseurl}}/apis/getRdf?identifiers=rome|augustus|av|aureus&amp;format=ttl">RDF/TTL</a>
             </td>
         </tr>
+        <tr>
+            <td>
+                <a href="#dieCounts">dieCounts</a>
+            </td>
+            <td/>
+            <td>
+                <a href="{{site.baseurl}}/apis/dieCounts">JSON</a>
+            </td>
+            <td/>
+        </tr>
     </tbody>
 </table>
 
@@ -157,7 +167,7 @@
     <h3>Average Weight</h3>
     <p>Get average weight for given SPARQL query.<br/>
         <b>Webservice Type</b> : REST<br/>
-        <b>Url</b> : nomisma.org/avgWeight?<br/>
+        <b>Url</b> : nomisma.org/apis/avgWeight?<br/>
         <b>Parameters</b> : constraints (following predicate - object format. multiple contraints separated by ' AND '. See examples below), format
         ('json' or 'xml', default 'xml')<br/>
         <b>Result</b> : returns a decimal number in a response wrapper.<br/>
@@ -173,7 +183,7 @@
     <h3>Closing Date</h3>
     <p>Get the closing date of a hoard based on coin type URIs provided in the request parameter.<br/>
         <b>Webservice Type</b> : REST<br/>
-        <b>Url</b> : nomisma.org/closingDate?<br/>
+        <b>Url</b> : nomisma.org/apis/closingDate?<br/>
         <b>Parameters</b> : identifiers (coin type URIs divided by a pipe '|'), format ('json' or 'xml', default 'xml')<br/>
         <b>Result</b> : returns an integer which represents the year. Negative numbers refer to B.C. dates.<br/>
         <b>Examples</b>: <a
@@ -186,7 +196,7 @@
     <p>Get all individual find spots for a given skos:Concept defined by the id parameter or for a given coin type (nmo:TypeSeriesItem) defined by
         the coinType parameter<br/>
         <b>Webservice Type</b> : REST<br/>
-        <b>Url</b> : nomisma.org/getFindspots?<br/>
+        <b>Url</b> : nomisma.org/apis/getFindspots?<br/>
         <b>Parameters</b> : id (of Nomisma ID) OR coinType (full URI for a coin type) OR symbol (full URI for a symbol [monogram, mint mark, etc.])<br/>
         <b>Result</b> : returns geoJSON for features (points or polygons)<br/>
         <b>Examples</b>: <a href="{{site.baseurl}}/apis/getFindspots?id=denarius">apis/getFindspots?id=denarius</a>, <a
@@ -201,7 +211,7 @@
     <p>Get all hoards associated with a given skos:Concept defined by the id parameter or for a given coin type (nmo:TypeSeriesItem) defined by the
         coinType parameter. If the skos:Concept is a hoard, then only one point is returned.<br/>
         <b>Webservice Type</b> : REST<br/>
-        <b>Url</b> : nomisma.org/getHoards?<br/>
+        <b>Url</b> : nomisma.org/apis/getHoards?<br/>
         <b>Parameters</b> : id (of Nomisma ID) OR coinType (full URI for a coin type) OR symbol (full URI for a symbol [monogram, mint mark, etc.])<br/>
         <b>Result</b> : returns geoJSON for features (points or polygons)<br/>
         <b>Examples</b>: <a href="{{site.baseurl}}/apis/getHoards?id=denarius">apis/getHoards?id=denarius</a>, <a
@@ -216,7 +226,7 @@
     <p>Get all minting locations (may be nmo:Mint or nmo:Region) associated with a given skos:Concept defined by the id parameter. If the
         skos:Concept is a mint or region, then only one point or polygon is returned.<br/>
         <b>Webservice Type</b> : REST<br/>
-        <b>Url</b> : nomisma.org/getMints?<br/>
+        <b>Url</b> : nomisma.org/apis/getMints?<br/>
         <b>Parameters</b> : id (of Nomisma ID) OR symbol (full URI for a symbol [monogram, mint mark, etc.])<br/>
         <b>Result</b> : returns geoJSON for features (points or polygons)<br/>
         <b>Examples</b>: <a href="{{site.baseurl}}/apis/getMints?id=denarius">apis/getMints?id=denarius</a>, <a
@@ -228,7 +238,7 @@
     <h3>Get Label</h3>
     <p>Get the label of a Nomisma ID given its URI and language code.<br/>
         <b>Webservice Type</b> : REST<br/>
-        <b>Url</b> : nomisma.org/getLabel?<br/>
+        <b>Url</b> : nomisma.org/apis/getLabel?<br/>
         <b>Parameters</b> : uri (of Nomisma ID), lang (two-letter ISO language code), format ('json' or 'xml', default 'xml')<br/>
         <b>Result</b> : returns the label in given language, or English as default.<br/>
         <b>Examples</b>: <a href="{{site.baseurl}}/apis/getLabel?uri=http://nomisma.org/id/ar&amp;lang=fr">apis/getLabel?uri=http://nomisma.org/id/ar&amp;lang=fr</a>
@@ -238,10 +248,20 @@
     <h3>Get RDF</h3>
     <p>Aggregate RDF for Nomisma ids. The default stream is in RDF/XML, but Turtle and JSON-LD are available.<br/>
         <b>Webservice Type</b> : REST<br/>
-        <b>Url</b> : nomisma.org/getRdf?<br/>
+        <b>Url</b> : nomisma.org/apis/getRdf?<br/>
         <b>Parameters</b> : identifiers (Nomisma ids divided by a pipe '|'), format ('xml', 'ttl', 'json'; default 'xml')<br/>
         <b>Result</b> : RDF/XML, RDF/TTL. Other RDF formats will be supported eventually.<br/>
         <b>Examples</b>: <a href="{{site.baseurl}}/apis/getRdf?identifiers=rome|augustus|av|aureus">apis/getRdf?identifiers=rome|augustus|av|aureus</a>
     </p>
 </div>
-<hr>
+<div id="dieCounts">
+    <h3>Die Counts</h3>
+    <p>The Die Counts API delivers a JSON response with available named graphs that correspond to die studies and formulas.<br/>
+        <b>Webservice Type</b> : REST<br/>
+        <b>Url</b> : nomisma.org/apis/dieCounts<br/>
+        <b>Parameters</b> : The calculation formula (e.g., 'esty') is appended to the URL pattern, and the 'dieStudy' parameter corresponds to a named graph URI reflecting the scholar, and the 'type' parameter corresponds to a coin type URI.<br/>
+        <b>Result</b> : JSON response, according to JSend.<br/>
+        <b>Examples</b>: <a href="{{site.baseurl}}/apis/dieCounts">apis/dieCounts</a>, <a href="{{site.baseurl}}/apis/dieCounts/esty?dieStudy=http%3A%2F%2Fnomisma.org%2Feditor%2Frschaefer&amp;type=http%3A%2F%2Fnumismatics.org%2Fcrro%2Fid%2Frrc-383.1">apis/dieCounts/esty?dieStudy=http%3A%2F%2Fnomisma.org%2Feditor%2Frschaefer&amp;type=http%3A%2F%2Fnumismatics.org%2Fcrro%2Fid%2Frrc-383.1</a>
+    </p>
+</div>
+<hr/>
