@@ -18,6 +18,8 @@ These concepts are committed to a [Github repository](https://github.com/nomisma
 
 [Partner datasets]({{site.baseurl}}/datasets) are available for download, primarily as RDF/XML. Please refer to each institution's rights and/or license statements regarding reuse.
 
+Nomisma Mint and Region concepts with geographic coordinates are accessible as [Linked Places](https://github.com/LinkedPasts/linked-places-format) GeoJSON-LD format: [download]({{site.baseurl}}/linked-pasts.json)
+
 ## Accessing Data Through Web Services
 It is possible to access Nomisma linked data through a variety of web services, either about individual concepts or any class of object integrated into Nomisma's SPARQL endpoint.
 
