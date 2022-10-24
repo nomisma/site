@@ -1,5 +1,5 @@
 ---
-title: Nomisma.org: How to Contribute Data
+title: How to Contribute Data to Nomisma.org
 layout: default
 permalink: /documentation/contribute/
 id: doc-contribute
