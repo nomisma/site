@@ -1,5 +1,5 @@
 ---
-title: Nomisma.org APIs
+title: Nomisma.org: How to Contribute Data
 layout: default
 permalink: /documentation/contribute/
 id: doc-contribute
