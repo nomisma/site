@@ -183,18 +183,18 @@ A coin was found (nmo:hasFindspot, repurposing an existing property to stand in 
         &lt;nmo:hasTypeSeriesItem rdf:resource="http://numismatics.org/ocre/id/ric.1(2).aug.541"/&gt;
         &lt;nmo:hasTypeSeriesItem rdf:resource="http://numismatics.org/ocre/id/ric.1(2).aug.340"/&gt;
     &lt;/dcmitype:Collection&gt;
-    &lt;crm:E53_Place rdf:about="https://sws.geonames.org/257598/"&gt;
-    	&lt;rdfs:label&gt;Matala (Greece)&lt;/rdfs:label&gt;
-    	&lt;crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300008347" /&gt;
-    	geo:location rdf:resource="https://sws.geonames.org/257598/#this" /&gt;
-    	&lt;crm:P168_place_is_defined_by rdf:resource="https://sws.geonames.org/257598/#this" /&gt;
+    &lt;crm:E53_Place rdf:about="https://sws.geonames.org/663431/"&gt;
+        &lt;rdfs:label&gt;Valea Scurtă (Romania)&lt;/rdfs:label&gt;
+        &lt;crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300008347"/&gt;
+        &lt;geo:location rdf:resource="https://sws.geonames.org/663431/#this"/&gt;
+        &lt;crm:P168_place_is_defined_by rdf:resource="https://sws.geonames.org/663431/#this"/&gt;
     &lt;/crm:E53_Place&gt;
     &lt;geo:SpatialThing rdf:about="https://sws.geonames.org/663431/#this"&gt;
-    	&lt;rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMgeo/SP5_Geometric_Place_Expression" /&gt;
-    	&lt;crmgeo:Q9_is_expressed_in_terms_of rdf:resource="http://www.wikidata.org/entity/Q215848" /&gt;
-    	&lt;geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"&gt;46.10391&lt;/geo:lat&gt;
-    	&lt;geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"&gt;26.19728&lt;/geo:long&gt;
-    	&lt;crmgeo:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"&gt;POINT (26.19728 46.10391)&lt;/crmgeo:asWKT&gt;
+        &lt;rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMgeo/SP5_Geometric_Place_Expression"/&gt;
+        &lt;crmgeo:Q9_is_expressed_in_terms_of rdf:resource="http://www.wikidata.org/entity/Q215848"/&gt;
+        &lt;geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"&gt;46.10391&lt;/geo:lat&gt;
+        &lt;geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"&gt;26.19728&lt;/geo:long&gt;
+        &lt;crmgeo:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"&gt;POINT (26.19728 46.10391)&lt;/crmgeo:asWKT&gt;
     &lt;/geo:SpatialThing&gt;
 &lt;/rdf:RDF&gt;
 </code></pre>
